@@ -34,16 +34,41 @@
 		<link>http://www.youtube.com/watch?v=nHekpZMe3xM</link>
 		 <media:thumbnail url="http://i2.ytimg.com/vi/nHekpZMe3xM/default.jpg"/>
 	 </item>
-1		
-	<!-- //baby foda
-	 //sertanejo
-	 //brasileirinho
-	 //g6
-	http://www.youtube.com/watch?v=Xwy3bvO7jTI //beat it
-	http://www.youtube.com/watch?v=uqdn1sAD86I //whats foda
-	http://www.youtube.com/watch?v=tV8ErlgqAXA //new metal
-	http://www.youtube.com/watch?v=N7grrJfQ2GI //linkin foda
-	http://www.youtube.com/watch?v=RIBkK5X_3mo //original
-	http://www.youtube.com/watch?v=FQSEq_TJy4U //(Mashup) Daft Avassaladores - Around the Foda-->
+	<item>
+		<title>Sou Foda Vs. Beat it - Michael Jackson</title>
+		<description>Sou Foda Vs. Beat it - Michael Jackson</description>
+		<link>http://www.youtube.com/watch?v=Xwy3bvO7jTI</link>
+		 <media:thumbnail url="http://i2.ytimg.com/vi/Xwy3bvO7jTI/default.jpg"/>
+	 </item>
+	<item>
+		<title>What is Foda</title>
+		<description>What is Foda</description>
+		<link>http://www.youtube.com/watch?v=uqdn1sAD86I</link>
+		 <media:thumbnail url="http://i2.ytimg.com/vi/uqdn1sAD86I/default.jpg"/>
+	 </item>
+	<item>
+		<title>Mashup Poop - Let the Bodies hit the Foda (Sou Foda vs Drowning Pool)</title>
+		<description>Mashup Poop - Let the Bodies hit the Foda (Sou Foda vs Drowning Pool)</description>
+		<link>http://www.youtube.com/watch?v=tV8ErlgqAXA</link>
+		 <media:thumbnail url="http://i2.ytimg.com/vi/tV8ErlgqAXA/default.jpg"/>
+	 </item>
+	<item>
+		<title>Linkin Park - Sou foda (EPIC REMIX!!)</title>
+		<description>Linkin Park - Sou foda (EPIC REMIX!!)</description>
+		<link>http://www.youtube.com/watch?v=N7grrJfQ2GI</link>
+		 <media:thumbnail url="http://i2.ytimg.com/vi/N7grrJfQ2GI/default.jpg"/>
+	 </item>
+	<item>
+		<title>(Mashup) Daft Avassaladores - Around the Foda</title>
+		<description>(Mashup) Daft Avassaladores - Around the Foda</description>
+		<link>http://www.youtube.com/watch?v=FQSEq_TJy4U</link>
+		 <media:thumbnail url="http://i2.ytimg.com/vi/FQSEq_TJy4U/default.jpg"/>
+	 </item>
+	<item>
+		<title>SOU FODA (ORIGINAL)</title>
+		<description>SOU FODA (ORIGINAL)</description>
+		<link>http://www.youtube.com/watch?v=RIBkK5X_3mo</link>
+		 <media:thumbnail url="http://i2.ytimg.com/vi/RIBkK5X_3mo/default.jpg"/>
+	 </item>	 
 </channel>
 </rss>
