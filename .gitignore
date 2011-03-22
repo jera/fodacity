@@ -1,0 +1,23 @@
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated GUI files
+*R.java
+
+# local build configuration file
+local.properties
+
+#libraries
+*.jar
+
+#sdcard test file
+*.img
+sdcard-test/*
+resources
