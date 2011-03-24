@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+	<head>
+		<title>
+			PhoneGap
+		</title>
+		<link rel="stylesheet" href="../javascripts/jquery.mobile-1.0a3.min.css" />
+		<script type="text/javascript" charset="utf-8" src="../javascripts/phonegap.0.9.4.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../javascripts/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="../javascripts/jquery.mobile-1.0a3.min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+document.addEventListener("deviceready", function() {
+			$('#home').live('swipeleft', function(event, ui) {
+				$.mobile.changePage("../revista/01.html", "slide", true)
+				e.stopImmediatePropagation();
+			    return false;
+			});
+			$('#home').live('swiperight', function(event, ui) {
+				$.mobile.changePage("../revista/03.html", "slide")
+				e.stopImmediatePropagation();
+			    return false;
+			});
+		}, true);
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
