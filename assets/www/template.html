@@ -9,32 +9,44 @@
 		<script type="text/javascript" charset="utf-8" src="javascripts/jquery-1.5.1.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="javascripts/jquery.mobile-1.0a3.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="javascripts/jquery.jgfeed-min.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			function onLoad() {
+				document.addEventListener("deviceready", onDeviceReady, false);
+			}
+
+			function onDeviceReady() {
+				navigator.network.isReachable("phonegap.com", reachableCallback, {});
+			}
+			function reachableCallback(reachability) {
+		    var networkState = reachability.code || reachability;
+		    if(NetworkStatus.NOT_REACHABLE == networkState) {
+		    	alert('MANOLO, VC TAH SEM INTERNET!!1!!!1 RRSRSRSR');
+		    	BackButton.exitApp();
+		    }
+    }
+	</script>
 	</head>
-	<body>
+	 <body onload="onLoad()">
 		<div data-role="page">
 			<div data-role="header"> 
-				<h1>Fodacity</h1>
+				<h1>Sou Foda Tube</h1>
 			</div>
 			<div id="content" data-role="content">
 			
 			</div>
 			<script type="text/javascript" charset="utf-8">
-				var view = {items:[
-					'http://i2.ytimg.com/vi/eDtgz3r7GMc/default.jpg',
-					'http://i2.ytimg.com/vi/jPomPxeAaEM/default.jpg',
-					'http://i2.ytimg.com/vi/kc1wRa81yW4/default.jpg'
-				]};
-				var linkPrefix = "http://www.youtube.com/watch?v=";	
-				
-				$.jGFeed('http://labs.jera.com.br/fodacity/feed.xml',function(feeds){
+				$(document).ready(function(){
+					$.mobile.pageLoading();
+					$.jGFeed('http://labs.jera.com.br/fodacity/feed.xml',function(feeds){
 					var str = "";
 					$(feeds.entries).each(function(k,v){
 						var id = v.link.split("=").pop();
-						str += "<a href="+v.link+"><img src='http://i2.ytimg.com/vi/"+id+"/default.jpg'></a><br />";
+						str += "<a href="+v.link+">"+v.title+"<img src='http://i2.ytimg.com/vi/"+id+"/default.jpg'></a><br />";
 					});
 					$('#content').html(str);
-				},20);
-				
+					$.mobile.pageLoading(true);
+				},100);
+				});
 			</script>
 		</div>
 	</body>
