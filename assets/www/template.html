@@ -37,7 +37,7 @@
 			<script type="text/javascript" charset="utf-8">
 				$(document).ready(function(){
 					$.mobile.pageLoading();
-					$.jGFeed('http://labs.jera.com.br/fodacity/feed.xml',function(feeds){
+					$.jGFeed('http://labs.jera.com.br/fodacity/feed.xml?date='+new Date(),function(feeds){
 					var str = "";
 					$(feeds.entries).each(function(k,v){
 						var id = v.link.split("=").pop();
