@@ -15,7 +15,7 @@
 local.properties
 
 #libraries
-*.jar
+#*.jar
 
 #sdcard test file
 *.img
