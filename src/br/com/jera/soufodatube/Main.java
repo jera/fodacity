@@ -1,4 +1,4 @@
-package br.com.jera;
+package br.com.jera.soufodatube;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -13,7 +13,11 @@ public class Main extends DroidGap {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         super.loadUrl("file:///android_asset/www/template.html");
-
+		SplashDialog dialog = new SplashDialog(this);
+		if (!dialog.isSplashed()) {
+			dialog.show();
+			dialog.setSplashed(true);
+		}
         // xtify specific-code
         Context context = this;
         final PersistentLocationManager persistentLocationManager = new PersistentLocationManager(context);
