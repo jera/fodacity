@@ -38,7 +38,7 @@
 			<intent-filter>
 				<action android:name="com.xtify.android.sdk.IMainService" />
 				<category android:name="com.xtify.android.sdk.IMainService" />
-				<category android:name="com.xtify.android.sdk.IMainService.Vxxxx" />
+				<category android:name="com.xtify.android.sdk.IMainService.V1050" />
 			</intent-filter>
 		</service>
 		<receiver android:name="com.xtify.android.sdk.MainReceiver">
